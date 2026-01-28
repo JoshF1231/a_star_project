@@ -2,6 +2,12 @@
 
 This Python script implements the A* (A-star) pathfinding algorithm to find the shortest path from a start point to a goal on a 2D grid with obstacles.
 
+## Example Output
+The visualization shows a smooth path hugging the top edge, avoiding obstacle clusters in columns 6-9 and the bottom-right area.
+
+![A* Pathfinding Result](a_star_demo_screen.jpg)
+
+
 ## Features
 - Uses Euclidean distance as the heuristic for optimal pathfinding.
 - Supports 8-directional movement (including diagonals).
@@ -45,11 +51,5 @@ The path navigates around obstacles while minimizing total distance.
 - Modify `grid` array to change obstacles.
 - Update `start` and `goal` tuples.
 - Swap `heuristic` for Manhattan distance: `abs(b[0]-a[0]) + abs(b[1]-a[1])`.
-
-## Example Output
-The visualization shows a smooth path hugging the top edge, avoiding obstacle clusters in columns 6-9 and the bottom-right area.
-
-![A* Pathfinding Result](a_star_demo.jpg)
-
 
 ***
